@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1f4f9e">
+  <title>Central de plataformas · Colégio Santa Inês</title>
+  <style>
+    :root { color-scheme: light; font: 18px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1e2c45; background: #f4f7fc; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; }
+    main { width: min(100%, 620px); padding: clamp(24px, 6vw, 48px); border: 1px solid #d9e3f3; border-radius: 24px; background: white; box-shadow: 0 18px 55px #142c5114; }
+    .brand { color: #1f4f9e; font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 10px 0; font-size: clamp(1.7rem, 6vw, 2.4rem); line-height: 1.15; }
+    p { color: #536785; }
+    a { display: inline-block; margin: 12px 0; padding: 13px 20px; border-radius: 14px; background: #1f4f9e; color: white; font-weight: 750; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #81b6ff; outline-offset: 3px; }
+    .hint { padding-top: 14px; border-top: 1px solid #e0e8f4; font-size: .92rem; }
+    code { padding: 2px 6px; border-radius: 6px; background: #eef3fb; color: #1f4f9e; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">Colégio Santa Inês</div>
+    <h1>Central de plataformas</h1>
+    <p>Para usar a versão de desenvolvimento, inicie o servidor local no Terminal e abra o site pelo endereço abaixo. Abrir este arquivo diretamente não conecta ao sistema de dados.</p>
+    <a href="http://127.0.0.1:3003/">Abrir site local</a>
+    <p class="hint">Se o endereço não abrir, inicie o servidor na pasta do projeto com <code>PORT=3003 node server.js</code>. Na hospedagem do colégio, o mesmo site será servido pelo Apache com PHP.</p>
+  </main>
+</body>
+</html>
